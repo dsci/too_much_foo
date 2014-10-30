@@ -7,7 +7,6 @@ var responseDataExtractor = function(){
     // If not, it is the resource name, otherwise the
     // resource name is the part before \d+
     var urlParts = url.split(/\//);
-    console.log(urlParts);
     var lastPart = urlParts[urlParts.length-1];
     var resourceName = lastPart;
     if(lastPart.match(/\d+/)){
